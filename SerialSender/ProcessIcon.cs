@@ -16,7 +16,7 @@ namespace SerialSender
         {
 	
             ni.MouseClick += new MouseEventHandler(ni_MouseClick);
-            ni.Icon = Resources.TrayIcon;
+            ni.Icon = Resources.Icon;
             ni.Text = "Serial Sender";
             ni.Visible = true;
 
@@ -25,12 +25,10 @@ namespace SerialSender
         }
         public void Dispose()
         {
-
             ni.Dispose();
         }
         void ni_MouseClick(object sender, MouseEventArgs e)
         {
-           
         }
     }
 }
